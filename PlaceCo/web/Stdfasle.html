@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style_1.css" rel="stylesheet" type="text/css"/>
+        <script>
+                   function  myFunction()
+                    {
+                    
+                     var x = document.forms["form1"]["regno"].value;
+                      if (x == null || x == "") {
+                       alert("Name must be filled out");
+                      return false;
+                     }
+                    }
+                    </script>
+    </head>
+    <body style="background-color: #ffcc33">
+        <div style="height: 100px" >
+            <center> <font style="font-family: fantasy; color: #ffffff;font-size: 100px">Student Login</font></center>   
+        </div>
+       <div class="login-04">
+		<div class="fourth-login">
+			<form name="form1" class="four">
+				<div class="green">
+					<input type="text" name="regno" class="text" placeholder="Register Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'Register Number';}" >
+				</div>
+				<div class="block">
+					<input type="password" name="pwd" placeholder="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.placeholder = 'PASSWORD';}">
+				</div>
+                            
+					<input type="submit" onclick="myFunction()" value="LOG IN" > 
+                                     <p style="color: #ff0000">Invalid UserName Or Password</p> 
+			</form>
+		</div>
+	</div>
+    </body>
+</html>
